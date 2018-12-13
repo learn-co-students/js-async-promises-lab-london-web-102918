@@ -31,14 +31,13 @@ function trueAndFalseButtons() {
 function toggleTrueAndFalseButtons() {
   trueAndFalseButtons().forEach(function(btn){
     btn.classList.toggle("hide")
-  })
+})
 }
 
 function displayQuestionOnClick() {
   let ask = document.querySelector('a')
   let btns = document.querySelector('.true-false-list').querySelectorAll('.btn')
-  ask.addEventListener('click', () => {
-    console.log();
+  ask.addEventListener('click', () => { 
     toggleTrueAndFalseButtons()
     askQuestionThenRemoveQuestion(5000)
   })
